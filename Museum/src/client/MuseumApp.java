@@ -64,6 +64,7 @@ public class MuseumApp {
 			}
 
 		} while (choice != 6);
+		System.out.println("The End ");
 	}
 
 }

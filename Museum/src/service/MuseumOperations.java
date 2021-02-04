@@ -80,6 +80,7 @@ public class MuseumOperations {
 
 	public Visitor[] visitorDetails(Visitor[] visitor) {
 		// TODO Auto-generated method stub
+		System.out.println("Enter visitor details");
 		String gender = null;
 		for (int i = 0; i < visitor.length; i++) {
 			System.out.println("Enter details for visitor " + (i + 1));
