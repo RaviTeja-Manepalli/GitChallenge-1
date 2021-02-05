@@ -12,7 +12,7 @@ public class MuseumApp {
 	public static void main(String[] args) {
 		MuseumOperations museumOperations = new MuseumOperations();
 		Visitor[] visitor = null;
-		int a = 0;
+		int ab = 0;
 		do {
 			System.out.println("1. Enter visitor details");
 			System.out.println("2. Display no of visitors on particular date");
@@ -22,10 +22,11 @@ public class MuseumApp {
 			
 			System.out.println("6. Exit");
 			System.out.println("Enter ur choice");
-			a = sc.nextInt();
-			switch (a) {
+			ab = sc.nextInt();
+			switch (ab) {
 			case 1:
 				System.out.println("No of visitors");
+			
 				int noofVisitors = sc.nextInt();
 				visitor = new Visitor[noofVisitors];
 
@@ -64,7 +65,7 @@ public class MuseumApp {
 				System.out.println("Invalid option");
 			}
 
-		} while (a != 6);
+		} while (ab != 6);
 		System.out.println("The End ");
 	}
 
