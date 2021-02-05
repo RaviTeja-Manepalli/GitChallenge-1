@@ -7,25 +7,26 @@ import entity.Visitor;
 
 public class MuseumApp {
 	static Scanner sc = new Scanner(System.in);
-	static Validations valid = new Validations();
+
 
 	public static void main(String[] args) {
 		MuseumOperations museumOperations = new MuseumOperations();
 		Visitor[] visitor = null;
-		int choice = 0;
+		int a = 0;
 		do {
 			System.out.println("1. Enter visitor details");
 			System.out.println("2. Display no of visitors on particular date");
 			System.out.println("3. Fetch visitors count with in age range");
 			System.out.println("4. Fetch female to male ratio");
 			System.out.println("5. Total money earned");
+			
 			System.out.println("6. Exit");
 			System.out.println("Enter ur choice");
-			choice = valid.integerValidation();
-			switch (choice) {
+			a = sc.nextInt();
+			switch (a) {
 			case 1:
 				System.out.println("No of visitors");
-				int noofVisitors = valid.integerValidation();
+				int noofVisitors = sc.nextInt();
 				visitor = new Visitor[noofVisitors];
 
 				visitor = museumOperations.visitorDetails(visitor);
@@ -63,7 +64,7 @@ public class MuseumApp {
 				System.out.println("Invalid option");
 			}
 
-		} while (choice != 6);
+		} while (a != 6);
 		System.out.println("The End ");
 	}
 
