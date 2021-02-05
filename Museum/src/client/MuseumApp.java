@@ -54,7 +54,7 @@ public class MuseumApp {
 				if (visitor != null)
 					System.out.println(museumOperations.moneyEarned(visitor));
 				else
-					System.out.println("No visitor detAILS");
+					System.out.println("XYZZ");
 				break;
 			case 6:
 				System.out.println("Thank you");
